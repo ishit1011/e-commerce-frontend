@@ -115,7 +115,7 @@ const Cart = () => {
                 }}
               >
                 <img
-                  src={`/${item.imageUrl}`}
+                  src={`/${item.imageUrl.replace(/^public\//, "")}`}
                   alt={item.name}
                   style={{
                     width: "200px",
