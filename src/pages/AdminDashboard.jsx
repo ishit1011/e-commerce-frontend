@@ -185,7 +185,7 @@ const AdminDashboard = () => {
       {/* Right Side: Order Image */}
       <div style={{ width: "50%", height: "100%", overflow: "hidden" }}>
         <img
-          src="public/order-img.png"
+          src="/order-img.png"
           alt="Order"
           style={{
             width: "100%",

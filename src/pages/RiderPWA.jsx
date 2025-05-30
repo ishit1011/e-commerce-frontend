@@ -263,7 +263,7 @@ export default function RiderPWA() {
               }}
             >
               <img
-                src="public/rider.png"
+                src="/rider.png"
                 alt="Order Illustration"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
