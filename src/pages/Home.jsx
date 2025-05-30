@@ -94,29 +94,74 @@ const Home = () => {
     marginBottom: "50px",
   }}
 >
-  {["iphone.png", "ps5.png", "macbook.png"].map((imgSrc, idx) => (
-    <div
-      key={idx}
+  <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+  {/* iPhone */}
+  <div
+    style={{
+      backgroundColor: "white",
+      borderRadius: "16px",
+      width: "300px",
+      height: "240px",
+      boxShadow: "0 4px 16px rgba(0,0,0,0.1)",
+      overflow: "hidden",
+    }}
+  >
+    <img
+      src="/iphone.png"
+      alt="iphone"
       style={{
-        backgroundColor: "white",
-        borderRadius: "12px",
-        width: "250px",
-        height: "200px",            // Fix height to show full image nicely
-        boxShadow: "0 0 10px rgba(0,0,0,0.1)",
-        overflow: "hidden",         // Clip overflow for clean edges
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
       }}
-    >
-      <img
-        src={'/ps5.png'}
-        alt={imgSrc.split(".")[0]}
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",      // Fill container without distortion
-        }}
-      />
-    </div>
-  ))}
+    />
+  </div>
+
+  {/* PS5 */}
+  <div
+    style={{
+      backgroundColor: "white",
+      borderRadius: "16px",
+      width: "300px",
+      height: "240px",
+      boxShadow: "0 4px 16px rgba(0,0,0,0.1)",
+      overflow: "hidden",
+    }}
+  >
+    <img
+      src="/ps5.png"
+      alt="ps5"
+      style={{
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+      }}
+    />
+  </div>
+
+  {/* MacBook */}
+  <div
+    style={{
+      backgroundColor: "white",
+      borderRadius: "16px",
+      width: "300px",
+      height: "240px",
+      boxShadow: "0 4px 16px rgba(0,0,0,0.1)",
+      overflow: "hidden",
+    }}
+  >
+    <img
+      src="/macbook.png"
+      alt="macbook"
+      style={{
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+      }}
+    />
+  </div>
+</div>
+
 </div>
 
 
