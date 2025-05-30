@@ -107,7 +107,7 @@ const Home = () => {
       }}
     >
       <img
-        src={`/public/${imgSrc}`}
+        src={'/ps5.png'}
         alt={imgSrc.split(".")[0]}
         style={{
           width: "100%",
