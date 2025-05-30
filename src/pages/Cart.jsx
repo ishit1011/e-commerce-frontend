@@ -179,13 +179,43 @@ const Cart = () => {
             Total: ₹{totalCartPrice}
           </div>
 
-          <input
-        type="text"
-        placeholder="Enter delivery address"
-        value={address}
-        onChange={(e) => setAddress(e.target.value)}
-      />
-      <button onClick={handlePlaceOrder}>Place Order</button>
+          <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, margin: '20px auto', gap: '12px' }}>
+  <input
+    type="text"
+    placeholder="Enter delivery address"
+    value={address}
+    onChange={(e) => setAddress(e.target.value)}
+    style={{
+      padding: '12px 16px',
+      fontSize: '16px',
+      borderRadius: '8px',
+      border: '1.5px solid #ccc',
+      outline: 'none',
+      transition: 'border-color 0.3s',
+    }}
+    onFocus={e => e.target.style.borderColor = '#0070f3'}
+    onBlur={e => e.target.style.borderColor = '#ccc'}
+  />
+  <button
+    onClick={handlePlaceOrder}
+    style={{
+      padding: '12px 20px',
+      fontSize: '16px',
+      fontWeight: '600',
+      color: 'white',
+      backgroundColor: '#0070f3',
+      border: 'none',
+      borderRadius: '8px',
+      cursor: 'pointer',
+      transition: 'background-color 0.3s',
+    }}
+    onMouseEnter={e => e.target.style.backgroundColor = '#005bb5'}
+    onMouseLeave={e => e.target.style.backgroundColor = '#0070f3'}
+  >
+    Place Order
+  </button>
+</div>
+
         </div>
       )}
     </div>
